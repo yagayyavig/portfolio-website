@@ -14,20 +14,20 @@
       <nav class="nav-container">
         <a href="#" class="nav-logo">YV</a>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#tech-stack" class="nav-link">Tech Stack</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <!-- Hero -->
-      <section class="hero">
+      <section class="hero reveal-section">
         <div class="hero-content">
-          <h1>Yagayya Vig</h1>
+          <h1 class="hero-title">Yagayya Vig</h1>
           <p class="hero-tagline">BCIT CIT Student · Full-Stack & Cloud · Internship Candidate</p>
           <p class="hero-intro">
             Computer Information Technology student with hands-on experience building full-stack web applications for real clients. Seeking internships in software development, IT, cloud, and infrastructure.
@@ -48,9 +48,9 @@
       </section>
 
       <!-- About -->
-      <section id="about" class="section">
-        <h2>About</h2>
-        <div class="about-content">
+      <section id="about" class="section reveal-section">
+        <h2 class="reveal-item" style="--reveal-order: 0">About</h2>
+        <div class="about-content reveal-item" style="--reveal-order: 1">
           <p>
             Computer Information Technology student at the British Columbia Institute of Technology (BCIT) with hands-on experience developing full-stack web applications for real clients. Experienced working in Agile environments and translating business requirements into technical solutions. Skilled with cloud platforms, virtual machines, and enterprise technologies including AWS, Microsoft Azure, and Azure Active Directory.
           </p>
@@ -60,74 +60,141 @@
         </div>
       </section>
 
-      <!-- Skills -->
-      <section id="skills" class="section">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-category">
+      <!-- Tech Stack -->
+      <section id="tech-stack" class="section reveal-section">
+        <h2 class="reveal-item" style="--reveal-order: 0">Tech Stack</h2>
+        <div class="tech-stack-grid">
+          <div class="tech-category reveal-item" style="--reveal-order: 1">
             <h3>Languages</h3>
-            <p>Python, TypeScript, Bash, PowerShell, R, SQL</p>
+            <div class="tech-pills">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">TypeScript</span>
+              <span class="tech-pill">Bash</span>
+              <span class="tech-pill">PowerShell</span>
+              <span class="tech-pill">R</span>
+              <span class="tech-pill">SQL</span>
+            </div>
           </div>
-          <div class="skill-category">
+          <div class="tech-category reveal-item" style="--reveal-order: 2">
             <h3>Web</h3>
-            <p>React, Node.js, Express.js, REST APIs, HTML, CSS</p>
+            <div class="tech-pills">
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">Express.js</span>
+              <span class="tech-pill">REST APIs</span>
+              <span class="tech-pill">HTML</span>
+              <span class="tech-pill">CSS</span>
+            </div>
           </div>
-          <div class="skill-category">
+          <div class="tech-category reveal-item" style="--reveal-order: 3">
             <h3>Databases</h3>
-            <p>MySQL, SQLite, Amazon DynamoDB</p>
+            <div class="tech-pills">
+              <span class="tech-pill">MySQL</span>
+              <span class="tech-pill">SQLite</span>
+              <span class="tech-pill">Amazon DynamoDB</span>
+            </div>
           </div>
-          <div class="skill-category">
+          <div class="tech-category reveal-item" style="--reveal-order: 4">
             <h3>Cloud & Systems</h3>
-            <p>AWS, Microsoft Azure, Virtual Machines, Linux, Windows Server, Active Directory, DNS, DHCP</p>
+            <div class="tech-pills">
+              <span class="tech-pill">AWS</span>
+              <span class="tech-pill">Microsoft Azure</span>
+              <span class="tech-pill">Virtual Machines</span>
+              <span class="tech-pill">Linux</span>
+              <span class="tech-pill">Windows Server</span>
+              <span class="tech-pill">Active Directory</span>
+              <span class="tech-pill">DNS</span>
+              <span class="tech-pill">DHCP</span>
+            </div>
           </div>
-          <div class="skill-category">
+          <div class="tech-category reveal-item" style="--reveal-order: 5">
             <h3>DevOps</h3>
-            <p>Docker, Jenkins, GitHub Actions, GitLab CI, Terraform, Nginx, Apache</p>
+            <div class="tech-pills">
+              <span class="tech-pill">Docker</span>
+              <span class="tech-pill">Jenkins</span>
+              <span class="tech-pill">GitHub Actions</span>
+              <span class="tech-pill">GitLab CI</span>
+              <span class="tech-pill">Terraform</span>
+              <span class="tech-pill">Nginx</span>
+              <span class="tech-pill">Apache</span>
+            </div>
           </div>
-          <div class="skill-category">
+          <div class="tech-category reveal-item" style="--reveal-order: 6">
             <h3>Tools</h3>
-            <p>Git, Postman, OpenAPI, ESLint, Jira, Trello, Figma</p>
+            <div class="tech-pills">
+              <span class="tech-pill">Git</span>
+              <span class="tech-pill">Postman</span>
+              <span class="tech-pill">OpenAPI</span>
+              <span class="tech-pill">ESLint</span>
+              <span class="tech-pill">Jira</span>
+              <span class="tech-pill">Trello</span>
+              <span class="tech-pill">Figma</span>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Featured Projects -->
-      <section id="projects" class="section section-projects">
-        <h2>Featured Projects</h2>
+      <section id="projects" class="section section-projects reveal-section">
+        <h2 class="reveal-item" style="--reveal-order: 0">Featured Projects</h2>
         <div class="projects-grid">
-          <article class="project-card">
-            <h3>Burnaby Board of Trade Grant Search Tool</h3>
-            <span class="project-meta">ISSP Project · Sep 2025 – Dec 2025</span>
-            <span class="project-tech">React · Node.js · MongoDB</span>
-            <p>
-              Built a web-based grant search platform for the Burnaby Board of Trade within an Agile development team. Implemented full-stack features from real client requirements. Contributed to testing and documentation. Participated in sprint planning and iterative Agile delivery. Platform helps small businesses in the Lower Mainland discover available grants.
+          <article class="project-card reveal-item" style="--reveal-order: 0">
+            <div class="project-header">
+              <h3>Burnaby Board of Trade Grant Search Tool</h3>
+              <span class="project-badge">ISSP Project</span>
+            </div>
+            <div class="project-meta-row">
+              <span class="project-date">Sep 2025 – Dec 2025</span>
+              <span class="project-tech">React · Node.js · MongoDB</span>
+            </div>
+            <p class="project-desc">
+              Built a web-based grant search platform for the Burnaby Board of Trade within an Agile development team. Implemented full-stack features from real client requirements, contributed to testing and documentation, and participated in sprint planning and iterative Agile delivery. The platform helps small businesses in the Lower Mainland discover available grants.
             </p>
+            <div class="project-links">
+              <span class="project-link project-link-placeholder">GitHub <i class="fab fa-github"></i> <span class="placeholder-note">(coming soon)</span></span>
+              <span class="project-link project-link-placeholder">Case study <span class="placeholder-note">(coming soon)</span></span>
+            </div>
           </article>
-          <article class="project-card">
-            <h3>Eurotech Assessment Services Inc. Website</h3>
-            <span class="project-meta">Jul 2025 – Aug 2025</span>
-            <p>
-              Designed and developed a responsive website for a real business client. Gathered stakeholder requirements and delivered the project within scope and timeline. Improved the company's online presence and accessibility.
+          <article class="project-card reveal-item" style="--reveal-order: 1">
+            <div class="project-header">
+              <h3>Eurotech Assessment Services Inc. Website</h3>
+            </div>
+            <div class="project-meta-row">
+              <span class="project-date">Jul 2025 – Aug 2025</span>
+            </div>
+            <p class="project-desc">
+              Designed and developed a responsive website for a real business client. Gathered stakeholder requirements and delivered the project within scope and timeline, improving the company's online presence and accessibility.
             </p>
-            <a href="https://eurotech-canada.com/" target="_blank" rel="noopener noreferrer" class="project-link">
-              View site <i class="fas fa-external-link-alt"></i>
-            </a>
+            <div class="project-links">
+              <a href="https://eurotech-canada.com/" target="_blank" rel="noopener noreferrer" class="project-link">
+                View site <i class="fas fa-external-link-alt"></i>
+              </a>
+              <span class="project-link project-link-placeholder">Case study <span class="placeholder-note">(coming soon)</span></span>
+            </div>
           </article>
-          <article class="project-card">
-            <h3>Budget Tracker</h3>
-            <span class="project-meta">Apr 2025 – May 2025</span>
-            <span class="project-tech">Node.js · Express · MySQL</span>
-            <p>
+          <article class="project-card reveal-item" style="--reveal-order: 2">
+            <div class="project-header">
+              <h3>Budget Tracker</h3>
+            </div>
+            <div class="project-meta-row">
+              <span class="project-date">Apr 2025 – May 2025</span>
+              <span class="project-tech">Node.js · Express · MySQL</span>
+            </div>
+            <p class="project-desc">
               Developed a full-stack budgeting application to track income, expenses, and financial summaries. Implemented backend services and designed database schemas for secure financial data storage. Built a responsive interface to visualize spending patterns and budgeting insights.
             </p>
+            <div class="project-links">
+              <span class="project-link project-link-placeholder">GitHub <i class="fab fa-github"></i> <span class="placeholder-note">(coming soon)</span></span>
+              <span class="project-link project-link-placeholder">Case study <span class="placeholder-note">(coming soon)</span></span>
+            </div>
           </article>
         </div>
       </section>
 
       <!-- Education -->
-      <section id="education" class="section">
-        <h2>Education</h2>
-        <div class="education-card">
+      <section id="education" class="section reveal-section">
+        <h2 class="reveal-item" style="--reveal-order: 0">Education</h2>
+        <div class="education-card reveal-item" style="--reveal-order: 1">
           <h3>British Columbia Institute of Technology (BCIT)</h3>
           <p class="education-degree">Diploma in Computer Information Technology</p>
           <p class="education-meta">Expected completion: April 2026</p>
@@ -135,10 +202,10 @@
       </section>
 
       <!-- Contact CTA -->
-      <section id="contact-cta" class="section section-cta">
-        <h2>Let's Connect</h2>
-        <p>Interested in discussing an internship or project? I'd welcome the opportunity to connect.</p>
-        <div class="cta-buttons">
+      <section id="contact-cta" class="section section-cta reveal-section">
+        <h2 class="reveal-item" style="--reveal-order: 0">Let's Connect</h2>
+        <p class="reveal-item" style="--reveal-order: 1">Interested in discussing an internship or project? I'd welcome the opportunity to connect.</p>
+        <div class="cta-buttons reveal-item" style="--reveal-order: 2">
           <a href="mailto:yagayyavig@gmail.com" class="btn btn-primary">
             <i class="fas fa-envelope"></i> Email Me
           </a>
@@ -159,6 +226,29 @@
       </div>
     </footer>
 
+    <script>
+      (function () {
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (prefersReducedMotion) return;
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('reveal-visible');
+              }
+            });
+          },
+          { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
+        );
+
+        document.querySelectorAll('.reveal-section').forEach((section) => {
+          section.classList.add('reveal-init');
+          observer.observe(section);
+        });
+      })();
+    </script>
+
     <style>
       :root {
         --accent: #2563eb;
@@ -168,6 +258,8 @@
         --bg: #f8fafc;
         --card-bg: #ffffff;
         --border: #e2e8f0;
+        --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        --duration: 0.4s;
       }
 
       * {
@@ -211,6 +303,11 @@
         font-size: 1.25rem;
         color: var(--accent);
         text-decoration: none;
+        transition: opacity 0.2s ease;
+      }
+
+      .nav-logo:hover {
+        opacity: 0.8;
       }
 
       .nav-links {
@@ -219,15 +316,31 @@
         gap: 2rem;
       }
 
-      .nav-links a {
+      .nav-link {
+        position: relative;
         color: var(--text);
         text-decoration: none;
         font-size: 0.95rem;
-        transition: color 0.2s ease;
+        transition: color var(--duration) var(--ease-out);
       }
 
-      .nav-links a:hover {
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background: var(--accent);
+        transition: width var(--duration) var(--ease-out);
+      }
+
+      .nav-link:hover {
         color: var(--accent);
+      }
+
+      .nav-link:hover::after {
+        width: 100%;
       }
 
       /* Hero */
@@ -247,6 +360,7 @@
         min-width: 280px;
       }
 
+      .hero-title,
       .hero h1 {
         font-size: 2.5rem;
         font-weight: 700;
@@ -295,7 +409,7 @@
         font-weight: 500;
         border-radius: 8px;
         text-decoration: none;
-        transition: all 0.2s ease;
+        transition: transform var(--duration) var(--ease-out), box-shadow var(--duration) var(--ease-out), background var(--duration) var(--ease-out), border-color var(--duration) var(--ease-out), color var(--duration) var(--ease-out);
         border: 2px solid transparent;
       }
 
@@ -308,6 +422,8 @@
       .btn-primary:hover {
         background: var(--accent-hover);
         border-color: var(--accent-hover);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
       }
 
       .btn-secondary {
@@ -319,6 +435,8 @@
       .btn-secondary:hover {
         background: #004182;
         border-color: #004182;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(10, 102, 194, 0.25);
       }
 
       .btn-outline {
@@ -330,19 +448,27 @@
       .btn-outline:hover {
         border-color: var(--accent);
         color: var(--accent);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.12);
       }
 
       /* Sections */
       .section {
         max-width: 1100px;
         margin: 0 auto;
-        padding: 3rem 1.5rem;
+        padding: 4rem 1.5rem;
       }
 
       .section h2 {
         font-size: 1.75rem;
-        margin-bottom: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1.75rem;
         color: var(--text);
+      }
+
+      .section-projects h2,
+      #tech-stack h2 {
+        margin-bottom: 2rem;
       }
 
       .about-content p {
@@ -351,36 +477,60 @@
         max-width: 720px;
       }
 
-      /* Skills */
-      .skills-grid {
+      /* Tech Stack */
+      .tech-stack-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        gap: 1.25rem;
+        gap: 1.5rem;
       }
 
-      .skill-category {
+      .tech-category {
         background: var(--card-bg);
-        padding: 1.25rem;
-        border-radius: 10px;
+        padding: 1.5rem;
+        border-radius: 12px;
         border: 1px solid var(--border);
-        transition: border-color 0.2s ease;
+        transition: border-color var(--duration) var(--ease-out), transform var(--duration) var(--ease-out), box-shadow var(--duration) var(--ease-out);
       }
 
-      .skill-category:hover {
+      .tech-category:hover {
         border-color: var(--accent);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(37, 99, 235, 0.08);
       }
 
-      .skill-category h3 {
-        font-size: 0.95rem;
+      .tech-category h3 {
+        font-size: 0.8rem;
+        font-weight: 600;
         color: var(--accent);
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
         text-transform: uppercase;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.06em;
       }
 
-      .skill-category p {
-        font-size: 0.9rem;
-        color: var(--text-muted);
+      .tech-pills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .tech-pill {
+        display: inline-block;
+        font-size: 0.85rem;
+        color: var(--text);
+        background: var(--bg);
+        padding: 0.35rem 0.75rem;
+        border-radius: 6px;
+        border: 1px solid var(--border);
+        transition: border-color var(--duration) var(--ease-out), background var(--duration) var(--ease-out);
+      }
+
+      .tech-category:hover .tech-pill {
+        border-color: rgba(37, 99, 235, 0.25);
+      }
+
+      .tech-pill:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 2px;
       }
 
       /* Projects */
@@ -388,52 +538,85 @@
         background: var(--card-bg);
         border-top: 1px solid var(--border);
         border-bottom: 1px solid var(--border);
+        padding: 4rem 1.5rem;
       }
 
       .projects-grid {
         display: grid;
-        gap: 1.5rem;
+        gap: 1.75rem;
       }
 
       .project-card {
         background: var(--bg);
-        padding: 1.5rem;
+        padding: 1.75rem;
         border-radius: 10px;
         border: 1px solid var(--border);
-        transition: border-color 0.2s ease;
+        transition: border-color var(--duration) var(--ease-out), transform var(--duration) var(--ease-out), box-shadow var(--duration) var(--ease-out);
       }
 
       .project-card:hover {
         border-color: var(--accent);
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px rgba(37, 99, 235, 0.1);
+      }
+
+      .project-header {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
       }
 
       .project-card h3 {
         font-size: 1.15rem;
-        margin-bottom: 0.5rem;
+        font-weight: 600;
         color: var(--text);
+        line-height: 1.35;
       }
 
-      .project-meta {
-        display: block;
+      .project-badge {
+        font-size: 0.7rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: var(--accent);
+        background: rgba(37, 99, 235, 0.1);
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        white-space: nowrap;
+      }
+
+      .project-meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .project-date {
         font-size: 0.85rem;
         color: var(--text-muted);
-        margin-bottom: 0.25rem;
       }
 
       .project-tech {
-        display: inline-block;
         font-size: 0.8rem;
         color: var(--accent);
         background: rgba(37, 99, 235, 0.08);
-        padding: 0.25rem 0.5rem;
-        border-radius: 6px;
-        margin-bottom: 0.75rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
       }
 
-      .project-card p {
+      .project-desc {
         font-size: 0.95rem;
         color: var(--text-muted);
-        margin-bottom: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1.25rem;
+      }
+
+      .project-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
       }
 
       .project-link {
@@ -447,6 +630,103 @@
 
       .project-link:hover {
         text-decoration: underline;
+      }
+
+      .project-link-placeholder {
+        opacity: 0.85;
+        cursor: default;
+        pointer-events: none;
+      }
+
+      .placeholder-note {
+        font-size: 0.8em;
+        color: var(--text-muted);
+      }
+
+      /* Reveal animations */
+      .reveal-section.reveal-init .reveal-item {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s var(--ease-out), transform 0.5s var(--ease-out);
+        transition-delay: calc(var(--reveal-order, 0) * 0.06s);
+      }
+
+      .reveal-section.reveal-visible .reveal-item {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .hero.reveal-init .reveal-item {
+        transition-delay: calc(var(--reveal-order, 0) * 0.08s);
+      }
+
+      .hero.reveal-section .hero-content > *,
+      .hero.reveal-section .hero-profile {
+        --reveal-order: 0;
+      }
+
+      .hero.reveal-section .hero-title { --reveal-order: 0; }
+      .hero.reveal-section .hero-tagline { --reveal-order: 1; }
+      .hero.reveal-section .hero-intro { --reveal-order: 2; }
+      .hero.reveal-section .hero-cta { --reveal-order: 3; }
+      .hero.reveal-section .hero-profile { --reveal-order: 4; }
+
+      .hero .hero-title,
+      .hero .hero-tagline,
+      .hero .hero-intro,
+      .hero .hero-cta,
+      .hero .hero-profile {
+        opacity: 0;
+        transform: translateY(16px);
+      }
+
+      .hero.reveal-init .hero-title,
+      .hero.reveal-init .hero-tagline,
+      .hero.reveal-init .hero-intro,
+      .hero.reveal-init .hero-cta,
+      .hero.reveal-init .hero-profile {
+        transition: opacity 0.5s var(--ease-out), transform 0.5s var(--ease-out);
+      }
+
+      .hero.reveal-init .hero-title { transition-delay: 0.1s; }
+      .hero.reveal-init .hero-tagline { transition-delay: 0.18s; }
+      .hero.reveal-init .hero-intro { transition-delay: 0.26s; }
+      .hero.reveal-init .hero-cta { transition-delay: 0.34s; }
+      .hero.reveal-init .hero-profile { transition-delay: 0.42s; }
+
+      .hero.reveal-visible .hero-title,
+      .hero.reveal-visible .hero-tagline,
+      .hero.reveal-visible .hero-intro,
+      .hero.reveal-visible .hero-cta,
+      .hero.reveal-visible .hero-profile {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .profile-img {
+        transition: transform var(--duration) var(--ease-out), border-color var(--duration) var(--ease-out);
+      }
+
+      .hero-profile:hover .profile-img {
+        transform: scale(1.02);
+        border-color: var(--accent);
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .reveal-section.reveal-init .reveal-item,
+        .hero.reveal-init .hero-title,
+        .hero.reveal-init .hero-tagline,
+        .hero.reveal-init .hero-intro,
+        .hero.reveal-init .hero-cta,
+        .hero.reveal-init .hero-profile {
+          opacity: 1;
+          transform: none;
+        }
+        .btn:hover,
+        .tech-category:hover,
+        .project-card:hover {
+          transform: none;
+        }
       }
 
       /* Education */
@@ -578,8 +858,17 @@
           height: 140px;
         }
 
-        .skills-grid {
+        .tech-stack-grid {
           grid-template-columns: 1fr;
+        }
+
+        .tech-pills {
+          gap: 0.4rem;
+        }
+
+        .tech-pill {
+          font-size: 0.8rem;
+          padding: 0.3rem 0.6rem;
         }
       }
     </style>

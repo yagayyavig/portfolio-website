@@ -3,35 +3,21 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Thank you for contacting Yagayya Vig. Your message has been received and I'll get back to you shortly." />
     <title>Thank You | Yagayya Vig</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <!-- ✅ SEO Meta Block (finalized with your domain) -->
-    <meta name="title" content="Thank You | Yagayya Vig">
-    <meta name="description" content="Thank you for contacting Yagayya Vig. Your message has been received and I'll get back to you shortly.">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yagayyaportfolio.xyz/thank-you.html">
-    <meta property="og:title" content="Thank You | Yagayya Vig">
-    <meta property="og:description" content="Thank you for contacting Yagayya Vig. I'll get back to you soon!">
-    <meta property="og:image" content="https://yagayyaportfolio.xyz/preview.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://yagayyaportfolio.xyz/thank-you.html">
-    <meta name="twitter:title" content="Thank You | Yagayya Vig">
-    <meta name="twitter:description" content="Thank you for contacting Yagayya Vig. I'll get back to you soon!">
-    <meta name="twitter:image" content="https://yagayyaportfolio.xyz/preview.png">
-
-    <!-- ⚠️ Make sure preview.png exists in /images folder -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <style>
         :root {
-            --accent: #00bfff;
-            --hover: #007acc;
-            --text: #e0f7fa;
-            --bg-black: #000000;
-            --card-bg: rgba(10, 10, 10, 0.9);
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --text: #1e293b;
+            --text-muted: #64748b;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
+            --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --duration: 0.4s;
         }
 
         * {
@@ -41,270 +27,239 @@
         }
 
         body {
-            font-family: 'Segoe UI', sans-serif;
-            background: var(--bg-black);
+            font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+            background: var(--bg);
             color: var(--text);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 2rem;
-            position: relative;
-            overflow: hidden;
         }
 
-        /* Enhanced shiny background effect */
-        body::before,
-        body::after {
-            content: '';
-            position: fixed;
-            inset: -150%;
-            background: 
-                linear-gradient(45deg, 
-                    transparent 20%,
-                    rgba(0, 191, 255, 0.05) 25%,
-                    rgba(0, 191, 255, 0.1) 27%,
-                    transparent 32%
-                ),
-                linear-gradient(-45deg, 
-                    transparent 20%,
-                    rgba(0, 191, 255, 0.05) 25%,
-                    rgba(0, 191, 255, 0.1) 27%,
-                    transparent 32%
-                );
-            background-size: 400% 400%;
-            animation: gradientMove 8s linear infinite;
-            z-index: -1;
-        }
-
-        body::after {
-            background: 
-                radial-gradient(circle at 50% 50%,
-                    transparent 20%,
-                    rgba(0, 191, 255, 0.03) 40%,
-                    rgba(0, 191, 255, 0.05) 60%,
-                    transparent 70%
-                );
-            background-size: 200% 200%;
-            animation: pulseGradient 15s ease-in-out infinite;
-            opacity: 0.7;
-        }
-
-        @keyframes gradientMove {
-            0% {
-                transform: translate(0, 0) rotate(0deg);
-            }
-            100% {
-                transform: translate(-50%, -50%) rotate(360deg);
-            }
-        }
-
-        @keyframes pulseGradient {
-            0%, 100% {
-                background-position: 0% 0%;
-            }
-            50% {
-                background-position: 100% 100%;
-            }
-        }
-
-        /* Additional ambient light effects */
-        .ambient-light {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-            background: 
-                radial-gradient(circle at 20% 20%, 
-                    rgba(0, 191, 255, 0.1) 0%, 
-                    transparent 50%),
-                radial-gradient(circle at 80% 80%, 
-                    rgba(0, 191, 255, 0.1) 0%, 
-                    transparent 50%);
-            animation: ambientLight 20s ease-in-out infinite alternate;
-            z-index: -1;
-        }
-
-        @keyframes ambientLight {
-            0%, 100% {
-                opacity: 0.5;
-                transform: scale(1);
-            }
-            50% {
-                opacity: 0.8;
-                transform: scale(1.2);
-            }
-        }
-
-        .thank-you-container {
+        /* Header */
+        header {
             background: var(--card-bg);
-            padding: 3rem;
-            border-radius: 20px;
-            box-shadow: 0 0 30px rgba(0, 191, 255, 0.2);
-            border: 1px solid rgba(0, 191, 255, 0.1);
-            backdrop-filter: blur(10px);
-            max-width: 600px;
-            width: 90%;
-            animation: fadeIn 0.5s ease;
-            position: relative;
-            overflow: hidden;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
-        /* Add container shine effect */
-        .thank-you-container::before {
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--accent);
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+
+        .nav-logo:hover {
+            opacity: 0.8;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            position: relative;
+            color: var(--text);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color var(--duration) var(--ease-out);
+        }
+
+        .nav-link::after {
             content: '';
             position: absolute;
-            top: -100%;
-            left: -100%;
-            width: 300%;
-            height: 300%;
-            background: linear-gradient(
-                45deg,
-                transparent 0%,
-                rgba(0, 191, 255, 0.05) 30%,
-                transparent 60%
-            );
-            animation: shimmer 8s linear infinite;
-            z-index: 1;
+            left: 0;
+            bottom: -2px;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width var(--duration) var(--ease-out);
         }
 
-        @keyframes shimmer {
-            0% {
-                transform: translate(-30%, -30%) rotate(0deg);
-            }
-            100% {
-                transform: translate(-30%, -30%) rotate(360deg);
-            }
+        .nav-link:hover {
+            color: var(--accent);
         }
 
-        h1 {
-            font-size: 2.5rem;
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        /* Main content */
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 1.5rem;
+        }
+
+        .thank-you-card {
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+            max-width: 520px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .thank-you-icon {
+            font-size: 3rem;
+            color: #22c55e;
             margin-bottom: 1.5rem;
-            background: linear-gradient(45deg, var(--accent), #80dfff);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: glow 2s ease-in-out infinite alternate;
-            position: relative;
-            z-index: 2;
         }
 
-        p {
-            font-size: 1.2rem;
+        .thank-you-card h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 1rem;
+        }
+
+        .thank-you-card p {
+            font-size: 1rem;
+            color: var(--text-muted);
             line-height: 1.6;
             margin-bottom: 2rem;
-            color: var(--text);
-            position: relative;
-            z-index: 2;
         }
 
-        .back-btn {
+        .btn {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
+            padding: 0.6rem 1.25rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: transform var(--duration) var(--ease-out), box-shadow var(--duration) var(--ease-out), background var(--duration) var(--ease-out);
+            border: 2px solid var(--accent);
             background: var(--accent);
             color: white;
-            text-decoration: none;
-            padding: 1rem 2rem;
-            border-radius: 12px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            position: relative;
-            z-index: 2;
         }
 
-        .back-btn:hover {
-            background: var(--hover);
+        .btn:hover {
+            background: var(--accent-hover);
+            border-color: var(--accent-hover);
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 191, 255, 0.3);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
         }
 
-        .icon {
-            font-size: 2rem;
-            color: var(--accent);
-            margin-bottom: 1.5rem;
-            position: relative;
-            z-index: 2;
-        }
-
-        @keyframes fadeIn {
-            from { 
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to { 
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes glow {
-            from { text-shadow: 0 0 10px rgba(0, 191, 255, 0.5); }
-            to { text-shadow: 0 0 20px rgba(0, 191, 255, 0.8); }
-        }
-
+        /* Footer */
         footer {
-            background: rgba(10, 10, 10, 0.95);
-            padding: 1rem;
+            background: var(--card-bg);
+            border-top: 1px solid var(--border);
+            padding: 1.5rem 1.5rem;
             text-align: center;
-            color: var(--accent);
+        }
+
+        footer p {
             font-size: 0.9rem;
-            backdrop-filter: blur(10px);
-            border-top: 1px solid rgba(0, 191, 255, 0.1);
-            width: 100%;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            z-index: 10;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            font-size: 1.25rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
         }
 
         @media (max-width: 768px) {
-            .thank-you-container {
+            .nav-links {
+                gap: 1.25rem;
+            }
+
+            .thank-you-card {
                 padding: 2rem;
             }
-            h1 {
-                font-size: 2rem;
+
+            .thank-you-card h1 {
+                font-size: 1.5rem;
             }
-            p {
-                font-size: 1rem;
+        }
+
+        @media (max-width: 480px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.75rem;
+            }
+
+            .thank-you-card {
+                padding: 1.5rem;
             }
         }
 
         @media (prefers-reduced-motion: reduce) {
-            * {
-                animation: none !important;
-                transition: none !important;
+            .btn:hover {
+                transform: none;
             }
         }
     </style>
 </head>
 <body>
-    <div class="ambient-light"></div>
-    <div class="thank-you-container">
-        <i class="fas fa-check-circle icon"></i>
-        <h1>Thank You!</h1>
-        <p>Your message has been received. I'll get back to you as soon as possible.</p>
-        <a href="index.html" class="back-btn">
-            <i class="fas fa-home"></i>
-            Back to Home
-        </a>
-    </div>
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="nav-logo">YV</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#tech-stack" class="nav-link">Tech Stack</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#education" class="nav-link">Education</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="thank-you-card">
+            <i class="fas fa-check-circle thank-you-icon" aria-hidden="true"></i>
+            <h1>Thank you</h1>
+            <p>Your message has been received. I'll get back to you as soon as possible.</p>
+            <a href="index.html" class="btn">
+                <i class="fas fa-home"></i>
+                Back to Home
+            </a>
+        </div>
+    </main>
+
     <footer>
-        <small>&copy; 2025 - Yagayya Projects</small>
+        <p>© 2025 Yagayya Vig · Delta, BC</p>
+        <div class="footer-links">
+            <a href="https://github.com/yagayyavig" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yagayya-vig" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
     </footer>
-
-    <!-- ✅ Confetti celebration -->
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    <script>
-        confetti({
-            particleCount: 150,
-            spread: 70,
-            origin: { y: 0.6 }
-        });
-    </script>
 </body>
-
+</html>
