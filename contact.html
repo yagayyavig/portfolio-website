@@ -175,7 +175,10 @@
         body { cursor: auto; } .cursor-dot, .cursor-follower { display: none; }
       }
       @media (max-width: 768px) {
-        .nav-links { display: none; } .mobile-menu-btn { display: block; }
+        .nav-links { display: none; }
+        .nav-links.mobile-active { display: flex; flex-direction: column; position: absolute; top: 100%; right: 2rem; background: var(--nav-bg); padding: 2rem; border-radius: 12px; border: 1px solid var(--border); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); align-items: flex-end; gap: 1rem; }
+        .nav-links.mobile-active .nav-active-bg { display: none; }
+        .mobile-menu-btn { display: block; }
         .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
       }
     </style>
@@ -308,6 +311,17 @@
           themeIcon.className = newTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
       });
 
+      const mobileBtn = document.querySelector('.mobile-menu-btn');
+      const navLinksUl = document.querySelector('.nav-links');
+      if(mobileBtn && navLinksUl) {
+          mobileBtn.addEventListener('click', () => {
+              navLinksUl.classList.toggle('mobile-active');
+          });
+          navLinksUl.addEventListener('click', (e) => {
+              if(e.target.tagName === 'A') navLinksUl.classList.remove('mobile-active');
+          });
+      }
+
       if (!isTouchDevice && !prefersReducedMotion) {
         const dot = document.querySelector('.cursor-dot');
         const follower = document.querySelector('.cursor-follower');
@@ -333,7 +347,7 @@
         });
       }
 
-      // Navbar Scroll & Active logic for Contact Page
+
       const navbar = document.getElementById('navbar');
       const activeLine = document.querySelector('.nav-active-bg');
       const activeLink = document.querySelector('.nav-link.active');
