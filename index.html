@@ -643,36 +643,7 @@
           }, 4000);
       }
 
-      // Accessible Modals
-          card.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.click(); } });
-          card.setAttribute('tabindex', '0');
-      });
 
-      dialogs.forEach(dialog => {
-          const closeBtn = dialog.querySelector('.modal-close');
-          const closeModal = () => {
-              dialog.classList.add('closing');
-              setTimeout(() => {
-                  dialog.close(); dialog.classList.remove('closing');
-                  if(lenis) lenis.start(); history.pushState("", document.title, window.location.pathname + window.location.search);
-              }, 400);
-          };
-          closeBtn.addEventListener('click', closeModal);
-          dialog.addEventListener('click', (e) => {
-              const rect = dialog.getBoundingClientRect();
-              const isInDialog = (rect.top <= e.clientY && e.clientY <= rect.top + rect.height && rect.left <= e.clientX && e.clientX <= rect.left + rect.width);
-              if (!isInDialog) { closeModal(); }
-          });
-          dialog.addEventListener('cancel', (e) => { e.preventDefault(); closeModal(); });
-      });
-
-      window.addEventListener('DOMContentLoaded', () => {
-          if(window.location.hash) {
-              const modalId = window.location.hash.substring(1);
-              const dialog = document.getElementById(modalId);
-              if(dialog) { setTimeout(() => { if(lenis) lenis.stop(); dialog.showModal(); }, 500); }
-          }
-      });
     </script>
 </body>
 </html>
