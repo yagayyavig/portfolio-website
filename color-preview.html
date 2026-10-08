@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body { 
+        background: #0F172A; 
+        color: #F8FAFC; 
+        font-family: 'Space Grotesk', system-ui, sans-serif; 
+        padding: 4rem; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container { 
+        display: flex; 
+        gap: 2rem; 
+        flex-wrap: wrap; 
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .card { 
+        background: #1E293B; 
+        padding: 2rem; 
+        border-radius: 12px; 
+        width: 320px; 
+        border: 2px solid #334155; 
+        transition: transform 0.2s ease;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    .title { 
+        font-size: 1.5rem; 
+        font-weight: bold; 
+        margin-bottom: 1rem; 
+    }
+    .text {
+        font-family: 'Inter', sans-serif;
+        color: #94A3B8;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+    .button { 
+        padding: 0.75rem 1.5rem; 
+        border: none; 
+        border-radius: 8px; 
+        color: #0F172A; 
+        font-weight: 600; 
+        font-family: 'Inter', sans-serif;
+        cursor: pointer; 
+        width: 100%;
+        font-size: 1rem;
+    }
+    .badge {
+        display: inline-block;
+        padding: 0.25rem 0.75rem;
+        border-radius: 99px;
+        font-size: 0.8rem;
+        font-family: 'JetBrains Mono', monospace;
+        margin-bottom: 1rem;
+        border: 1px solid currentColor;
+        background: rgba(0,0,0,0.2);
+    }
+    
+    /* 1. Phosphor Green */
+    .green { box-shadow: 0 10px 30px rgba(16, 185, 129, 0.1); }
+    .green .title, .green .badge { color: #10B981; } 
+    .green .button { background: #10B981; }
+    
+    /* 2. Tactical Amber */
+    .amber { box-shadow: 0 10px 30px rgba(245, 158, 11, 0.1); }
+    .amber .title, .amber .badge { color: #F59E0B; } 
+    .amber .button { background: #F59E0B; }
+    
+    /* 3. Cyber Cyan */
+    .cyan { box-shadow: 0 10px 30px rgba(6, 182, 212, 0.1); }
+    .cyan .title, .cyan .badge { color: #06B6D4; } 
+    .cyan .button { background: #06B6D4; }
+  </style>
+</head>
+<body>
+  <h1>Select Your Accent Color</h1>
+  <p style="color: #94A3B8; font-family: 'Inter', sans-serif;">Here are 3 distinct accent colors applied against your Deep Slate (#0F172A) base.</p>
+  
+  <div class="container">
+    <div class="card green">
+      <div class="badge">#10B981</div>
+      <div class="title">1. Phosphor Green</div>
+      <div class="text">A direct nod to classic terminal and digital forensics. Highly legible, authoritative, and distinctly "tech."</div>
+      <button class="button">Primary Action</button>
+    </div>
+    
+    <div class="card amber">
+      <div class="badge">#F59E0B</div>
+      <div class="title">2. Tactical Amber</div>
+      <div class="text">Provides excellent contrast with a slightly warmer, analog touch. Gives a premium, handcrafted feel.</div>
+      <button class="button">Primary Action</button>
+    </div>
+    
+    <div class="card cyan">
+      <div class="badge">#06B6D4</div>
+      <div class="title">3. Cyber Cyan (My Pick)</div>
+      <div class="text">A sharp, vibrant blue-green that bridges the gap between modern software engineering and digital investigation.</div>
+      <button class="button">Primary Action</button>
+    </div>
+  </div>
+</body>
+</html>
